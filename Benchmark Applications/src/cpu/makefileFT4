@@ -1,0 +1,9 @@
+t1f: BMFloatT4.o
+	gcc -O0 -pthread BMFloatT4.o -lm
+BMFloatT4.o: BMFloatT4.c
+	gcc -c BMFloatT4.c
+clean:
+	rm -f *.o
+run:
+	./a.out
+

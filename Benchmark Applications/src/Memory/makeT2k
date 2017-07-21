@@ -1,0 +1,8 @@
+T2B: memT2k.o
+	gcc -O0 -w -pthread memT2k.o -lm
+memT2k.o: memT2k.c
+	gcc -c -w memT2k.c
+clean:
+	rm -f *.o
+run:
+	./a.out

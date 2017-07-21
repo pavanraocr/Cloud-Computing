@@ -1,0 +1,8 @@
+t4f: cpuT4F.o
+	gcc -O0 -pthread cpuT4F.o -lm
+cpuT4F.o: cpuT4F.c
+	gcc -c cpuT4F.c
+clean:
+	rm -f *.o
+run:
+	./a.out

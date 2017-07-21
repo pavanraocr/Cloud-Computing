@@ -1,0 +1,49 @@
+This is a SAMPLE run script for SMP LINPACK. Change it to reflect
+the correct number of CPUs/threads, problem input files, etc..
+Fri Feb 12 17:40:27 UTC 2016
+Intel(R) Optimized LINPACK Benchmark data
+
+Current date/time: Fri Feb 12 17:40:27 2016
+
+CPU frequency:    2.971 GHz
+Number of CPUs: 1
+Number of cores: 1
+Number of threads: 1
+
+Parameters are set to:
+
+Number of tests: 15
+Number of equations to solve (problem size) : 1000  2000  5000  10000 15000 18000 20000 22000 25000 26000 27000 30000 35000 40000 45000
+Leading dimension of array                  : 1000  2000  5008  10000 15000 18008 20016 22008 25000 26000 27000 30000 35000 40000 45000
+Number of trials to run                     : 4     2     2     2     2     2     2     2     2     2     1     1     1     1     1    
+Data alignment value (in Kbytes)            : 4     4     4     4     4     4     4     4     4     4     4     1     1     1     1    
+
+Maximum memory requested that can be used=800204096, at the size=10000
+
+=================== Timing linear equation system solver ===================
+
+Size   LDA    Align. Time(s)    GFlops   Residual     Residual(norm) Check
+1000   1000   4      0.040      16.5375  9.900691e-13 3.376390e-02   pass
+1000   1000   4      0.039      17.2651  9.900691e-13 3.376390e-02   pass
+1000   1000   4      0.038      17.5038  9.900691e-13 3.376390e-02   pass
+1000   1000   4      0.039      17.3190  9.900691e-13 3.376390e-02   pass
+2000   2000   4      0.290      18.4229  4.053480e-12 3.526031e-02   pass
+2000   2000   4      0.286      18.6694  4.053480e-12 3.526031e-02   pass
+5000   5008   4      4.256      19.5902  2.336047e-11 3.257429e-02   pass
+5000   5008   4      4.294      19.4205  2.336047e-11 3.257429e-02   pass
+10000  10000  4      33.251     20.0553  1.124127e-10 3.963786e-02   pass
+10000  10000  4      32.803     20.3296  1.124127e-10 3.963786e-02   pass
+
+Performance Summary (GFlops)
+
+Size   LDA    Align.  Average  Maximal
+1000   1000   4       17.1563  17.5038 
+2000   2000   4       18.5461  18.6694 
+5000   5008   4       19.5053  19.5902 
+10000  10000  4       20.1924  20.3296 
+
+Residual checks PASSED
+
+End of tests
+
+Done: Fri Feb 12 17:41:49 UTC 2016

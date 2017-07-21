@@ -1,0 +1,8 @@
+disk2: diskT2.o
+	gcc -O0 -pthread diskT2.o -lm
+diskT2.o: diskT2.c
+	gcc -c -w diskT2.c
+clean:
+	rm -f *.o *.txt
+run:
+	./a.out

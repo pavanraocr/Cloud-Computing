@@ -1,0 +1,9 @@
+t1I: cpuT1I.o
+	gcc -O0 -pthread cpuT1I.o -lm
+cpuT1I.o: cpuT1I.c
+	gcc -c cpuT1I.c
+clean:
+	rm -f *.o
+run:
+	./a.out
+

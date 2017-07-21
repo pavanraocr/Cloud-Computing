@@ -1,0 +1,9 @@
+BM: BMIntT4.o
+	gcc -O0 -pthread BMIntT4.o -lm
+BMIntT4.o: BMIntT4.c
+	gcc -c BMIntT4.c
+clean:
+	rm -f *.o
+run:
+	./a.out
+

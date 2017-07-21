@@ -1,0 +1,8 @@
+T1BR: memT1br.o
+	gcc -O0 -w -pthread memT1br.o -lm
+memT1br.o: memT1br.c
+	gcc -c -w memT1br.c
+clean:
+	rm -f *.o
+run:
+	./a.out
